@@ -1,0 +1,19 @@
+# 更新
+
+git pull
+
+# 提交
+
+1. git status //查看修改文件
+2. git add . //将修改添加到本地仓储
+2. git commit -m "注释" //将修改提交到本地仓储
+3. git push //将修改从本地仓储推送到远程仓储
+
+# 放弃本地更改，强制从远程更新
+
+git fetch --all
+git reset --hard origin/master
+
+# 放弃远程更改，强制将本地代码推送到远程
+
+git push -f origin master

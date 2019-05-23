@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LableControlForm));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
@@ -40,9 +41,10 @@
             this.labelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl1.Location = new System.Drawing.Point(21, 12);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(151, 14);
+            this.labelControl1.Size = new System.Drawing.Size(283, 14);
             this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "<b>Click</b> to open our <href=\"http://www.devexpress.com\">Web-site</href>";
+            this.labelControl1.Text = "<b>Click</b> <href=\"http://www.devexpress.com\">www.devexpress.com</href>  to open" +
+    " our web site.";
             this.labelControl1.HyperlinkClick += new DevExpress.Utils.HyperlinkClickEventHandler(this.labelControl1_HyperlinkClick);
             // 
             // labelControl2
@@ -55,19 +57,29 @@
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "labelControl2";
             // 
+            // labelControl30
+            // 
+            this.labelControl30.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl3.Appearance.Image")));
+            this.labelControl30.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.labelControl30.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl30.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.labelControl30.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
+            this.labelControl30.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            this.labelControl30.LineVisible = true;
+            this.labelControl30.Location = new System.Drawing.Point(12, 227);
+            this.labelControl30.Name = "labelControl30";
+            this.labelControl30.Size = new System.Drawing.Size(219, 20);
+            this.labelControl30.TabIndex = 2;
+            this.labelControl30.Text = "labelControl3";
+            // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl3.Appearance.Image")));
-            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.labelControl3.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
-            this.labelControl3.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
-            this.labelControl3.LineVisible = true;
-            this.labelControl3.Location = new System.Drawing.Point(21, 82);
+            this.labelControl3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl4.Appearance.Image")));
+            this.labelControl3.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
+            this.labelControl3.Location = new System.Drawing.Point(21, 91);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(219, 20);
-            this.labelControl3.TabIndex = 2;
+            this.labelControl3.Size = new System.Drawing.Size(91, 20);
+            this.labelControl3.TabIndex = 3;
             this.labelControl3.Text = "labelControl3";
             // 
             // LableControlForm
@@ -76,6 +88,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(331, 306);
             this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.labelControl30);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.Name = "LableControlForm";
@@ -89,6 +102,7 @@
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl30;
         private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }

@@ -15,7 +15,7 @@ namespace XtraEditorsDemo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LableControlForm());
+            Application.Run(new SimpleButtonForm());
         }
     }
 }
